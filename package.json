@@ -1,0 +1,7 @@
+{
+    "name": "compliance",
+    "dependencies": {
+        "mongoose": "^5.4.15",
+        "request": "^2.88.0"
+    }
+}
