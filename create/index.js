@@ -7,9 +7,9 @@ module.exports = function (context, req) {
         const Schema = mongoose.Schema;
         var User = require('../models/user');
         const user = new User({
-            name: 'fayaz',
-            age: 25,
-            city: 'chennai'
+            name: req.body.name,
+            age: req.body.age,
+            city: req.body.city
         });
         user.save(function(err, res){
             if(err){
